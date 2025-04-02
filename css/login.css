@@ -1,0 +1,136 @@
+/* styles-login.css - Estilo para página de login escolar */
+:root {
+    --azul-escuela: #1a4b8c;
+    --amarillo-escuela: #f9c80e;
+    --blanco: #ffffff;
+    --gris-claro: #f5f5f5;
+    --sombra: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  body {
+    background-color: var(--gris-claro);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-image: url('fondo-escuela.jpg'); /* Opcional: añade una imagen de fondo */
+    background-size: cover;
+    background-position: center;
+  }
+  
+  .login-container {
+    width: 100%;
+    max-width: 400px;
+    padding: 2.5rem;
+    background-color: var(--blanco);
+    border-radius: 12px;
+    box-shadow: var(--sombra);
+    text-align: center;
+  }
+  
+  .logo-escuela {
+    width: 120px;
+    margin-bottom: 1.5rem;
+  }
+  
+  h1 {
+    color: var(--azul-escuela);
+    margin-bottom: 1.5rem;
+    font-size: 1.8rem;
+    font-weight: 600;
+  }
+  
+  .login-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+  }
+  
+  .form-group {
+    text-align: left;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 0.5rem;
+    color: var(--azul-escuela);
+    font-weight: 500;
+  }
+  
+  input {
+    width: 100%;
+    padding: 12px 16px;
+    border: 2px solid #e0e0e0;
+    border-radius: 8px;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+  }
+  
+  input:focus {
+    outline: none;
+    border-color: var(--azul-escuela);
+    box-shadow: 0 0 0 3px rgba(26, 75, 140, 0.1);
+  }
+  
+  .btn-login {
+    background-color: var(--azul-escuela);
+    color: white;
+    border: none;
+    padding: 14px;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-top: 1rem;
+  }
+  
+  .btn-login:hover {
+    background-color: #0d3a73;
+    transform: translateY(-2px);
+  }
+  
+  .footer-login {
+    margin-top: 2rem;
+    color: #666;
+    font-size: 0.9rem;
+  }
+  
+  /* Efectos para móviles */
+  @media (max-width: 480px) {
+    .login-container {
+      margin: 1rem;
+      padding: 1.5rem;
+    }
+    
+    h1 {
+      font-size: 1.5rem;
+    }
+  }
+  
+  /* Elementos educativos adicionales */
+  .decoracion-educativa {
+    position: absolute;
+    width: 100px;
+    opacity: 0.1;
+    z-index: -1;
+  }
+  
+  .decoracion-1 {
+    top: 20%;
+    left: 10%;
+    transform: rotate(30deg);
+  }
+  
+  .decoracion-2 {
+    bottom: 15%;
+    right: 8%;
+    transform: rotate(-15deg);
+  }
